@@ -1,5 +1,8 @@
 package zoo.animal;
 
+/**
+Classe d'animaux
+ */
 public abstract class Animal {
 	protected String nomAnimal;
 	

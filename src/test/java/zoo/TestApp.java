@@ -3,10 +3,8 @@ package zoo;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
-import org.junit.Rule;
 import org.junit.Test;
 
-import junit.framework.TestCase;
 import zoo.animal.TypeAnimal;
 import zoo.exception.LimiteVisiteurException;
 
@@ -19,7 +17,7 @@ public class TestApp {
 		Throwable e = null;
 		
 		try{
-			addVisiteur(zoo, 14);
+			addVisiteur(zoo, 16);
 		}
 		catch(Throwable ex) {
 			e = ex;
