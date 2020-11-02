@@ -5,6 +5,7 @@ import java.util.List;
 
 import zoo.animal.Animal;
 import zoo.animal.TypeAnimal;
+import zoo.exception.AnimalDansMauvaisSecteurException;
 
 public class Secteur {
 
@@ -16,7 +17,10 @@ public class Secteur {
 		animauxDansSecteur = new ArrayList<Animal>();
 	}
 	
-	public void ajouterAnimal(Animal add) {
+	public void ajouterAnimal(Animal add) throws AnimalDansMauvaisSecteurException {
+		if(add.getTypeAnimal() != typeAnimauxDansSecteur) {
+			throw new AnimalDansMauvaisSecteurException();
+		}
 		animauxDansSecteur.add(add);
 	}
 

@@ -1,9 +1,9 @@
 package zoo.animal;
 
-public class Animal {
-	private String nomAnimal;
+public abstract class Animal {
+	protected String nomAnimal;
 	
-	private TypeAnimal typeAnimal;
+	protected TypeAnimal typeAnimal;
 
 	public String getNomAnimal() {
 		return nomAnimal;
