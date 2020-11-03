@@ -1,6 +1,0 @@
-engines:
-  pmd:
-    enable: true
-ratings:
-  paths:
-  - "**.java"
