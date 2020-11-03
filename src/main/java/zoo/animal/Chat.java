@@ -2,7 +2,8 @@ package zoo.animal;
 
 public class Chat extends Animal {
 
-	public Chat() {
+	public Chat(String name) {
 		typeAnimal = TypeAnimal.CHAT;
+		nomAnimal = name;
 	}
 }
