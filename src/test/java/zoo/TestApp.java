@@ -17,7 +17,7 @@ public class TestApp {
 		Throwable e = null;
 		
 		try{
-			addVisiteur(zoo, 16);
+			addVisiteur(zoo, 15);
 		}
 		catch(Throwable ex) {
 			e = ex;
