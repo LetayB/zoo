@@ -51,6 +51,21 @@ public class TestApp {
 		}
 	}
 
+	@Test
+	public void testNbAnimaux() {
+		Throwable e = null;
+		Zoo zoo = new Zoo();
 
+		zoo.ajouterSecteur(TypeAnimal.CHIEN);
+		try {
+			zoo.nouvelAnimal(new Chien("Rex"));
+		} catch (AnimalDansMauvaisSecteurException exc) {
+			e = exc;
+		}
+
+		assertFalse(e instanceof AnimalDansMauvaisSecteurException);
+		assertEquals(zoo.nombreAnimaux(), 1);
+
+	}
 	
 }
