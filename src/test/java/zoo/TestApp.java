@@ -64,7 +64,7 @@ public class TestApp {
 		}
 
 		assertFalse(e instanceof AnimalDansMauvaisSecteurException);
-		assertEquals(zoo.nombreAnimaux(), 1);
+		assertEquals(1,zoo.nombreAnimaux());
 
 	}
 	
