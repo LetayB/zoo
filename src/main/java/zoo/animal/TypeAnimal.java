@@ -2,5 +2,6 @@ package zoo.animal;
 
 public enum TypeAnimal {
 	CHAT,
-	CHIEN
+	CHIEN,
+	LAPIN
 }
