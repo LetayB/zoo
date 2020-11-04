@@ -47,4 +47,36 @@ public class Zoo {
 	private Secteur getSecteurFromType(TypeAnimal type) {
 		return secteursAnimaux.stream().filter(s -> s.obtenirType() == type).findFirst().orElse(null);
 	}
+
+	/**
+	 * Fonction inutile, ajoutée pour generer du code smell sur code Climate
+	 */
+	private void codeSmell(){
+		int a = 31;
+		int b = 33;
+		int c = 32;
+
+		List mylList;
+
+		a = b ;
+		c = a ;
+		b = c ;
+	}
+
+	/**
+	 * Fonction inutile, ajoutée pour generer du code smell sur code Climate
+	 */
+	private void codeSmell2(){
+		int a = 31;
+		int b = 33;
+		int c = 32;
+
+		List mylList;
+
+		a = b ;
+		c = a ;
+		b = c ;
+	}
+
+
 }
