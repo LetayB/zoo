@@ -20,7 +20,7 @@ public class TestApp {
 		Throwable e = null;
 
 		try {
-			addVisiteur(zoo, 15);
+			addVisiteur(zoo, 16);
 		} catch (Throwable ex) {
 			e = ex;
 		}
